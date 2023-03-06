@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card-design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        height: 100vh;
+        background-color: rgb(248, 247, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 325px;
+        background-color: white;
+        border: 1px transparent;
+        border-radius: 12px;
+      }
+      .card img {
+        border: 1px transparent;
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+      }
+      .card-body {
+        margin: 0px 14px 12px 14px;
+      }
+      .card-footer {
+        font-weight: 300;
+        display: flex;
+        font-size: 13.5px;
+        justify-content: space-between;
+      }
+      .description {
+        font-size: 15px;
+        font-weight: 300;
+        color: grey;
+      }
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .level {
+        font-size: 12px;
+        color: rgb(16, 188, 135);
+        padding: 7px;
+        border: 1 transparent;
+        border-radius: 5px;
+        background-color: rgb(235, 248, 243);
+      }
+      .heart {
+        font-size: 15px;
+        color: rgb(214, 41, 61);
+      }
+      .rating {
+        display: flex;
+        font-size: 15px;
+      }
+      .star-icon {
+        color: rgb(247, 195, 46);
+        padding-right: 3px;
+      }
+
+      .title {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .footer-content {
+        display: flex;
+      }
+      .footer-icon {
+        color: rgb(214, 42, 62);
+        padding-right: 7px;
+      }
+      .rate {
+        color: black;
+        font-weight: 200;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://eduport.webestica.com/assets/images/courses/4by3/03.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="card-header">
+            <p class="level">Beginner</p>
+            <p class="heart">
+              <i class="fa-solid fa-heart"></i>
+            </p>
+          </div>
+          <p class="title">Create a Design System in Figma</p>
+          <p class="description">
+            Rooms oh fully taken by worse do. Points afraid but may end afraid
+            but...
+          </p>
+
+          <div class="rating">
+            <p class="star-icon"><i class="fa-solid fa-star"></i></p>
+            <p class="star-icon"><i class="fa-solid fa-star"></i></p>
+            <p class="star-icon"><i class="fa-solid fa-star"></i></p>
+            <p class="star-icon"><i class="fa-solid fa-star"></i></p>
+            <p class="star-icon">
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </p>
+            <p class="rate">4.5/5.0</p>
+          </div>
+
+          <hr />
+          <div class="card-footer">
+            <div class="footer-content">
+              <p class="footer-icon"><i class="fa-regular fa-clock"></i></p>
+              <p>5h 56m</p>
+            </div>
+            <div class="footer-content">
+              <p class="footer-icon" style="color: rgb(253, 126, 19)">
+                <i class="fa-regular fa-calendar-days"></i>
+              </p>
+              <p>32 lectures</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
